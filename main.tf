@@ -10,12 +10,12 @@
 # }
 
 
-resource "aws_instance" "public_instance" {
+resource "aws_instance" "krishna_instance" {
   count         = var.instance_count
   ami           = var.ami_id
   instance_type = var.instance_type
 
     tags = {
-    Name = "public_instance-${count.index}"   #public_instance-0, public_instance-1, public_instance-2 
+    Name = "krishna_instance-${count.index}"   #krishna_instance-0, krishna_instance-1, krishna_instance-2 
   }
 }
