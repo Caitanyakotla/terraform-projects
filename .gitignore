@@ -1,0 +1,23 @@
+# Terraform state
+*.tfstate
+*.tfstate.*
+crash.log
+
+# Terraform plan output
+*.tfplan
+
+# Local terraform settings
+.terraform/
+.terraform.lock.hcl
+
+# Editor/IDE files
+*.swp
+*.bak
+*.tmp
+*.log
+*.vscode/
+.idea/
+
+# OS metadata files
+.DS_Store
+Thumbs.db
