@@ -14,4 +14,8 @@ resource "aws_instance" "public_instance" {
   count         = var.instance_count
   ami           = var.ami_id
   instance_type = var.instance_type
+
+    tags = {
+    Name = "public_instance-${count.index}"   #public_instance-0, public_instance-1, public_instance-2 
+  }
 }
